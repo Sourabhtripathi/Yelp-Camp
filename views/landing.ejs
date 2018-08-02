@@ -1,8 +1,30 @@
 <% include partials/header %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/landing.css">
 
-<h1>Landing Page</h1>
-<h4>Welcome to Yelp Camp</h4>
-
-<a href="/campgrounds">View all CampGrounds</a>
+<div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    
+    <div id="landing-header">
+ 		<h1>Welcome to YelpCamp!</h1>
+		<a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+    </div>
+    
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
 <% include partials/footer %>
