@@ -1,0 +1,16 @@
+<% include ./partials/header %>
+
+<div class="container text-center pull-center">
+	<h1>Create a New Account</h1>
+	<form action="/register" method="POST">
+		<div class="form-group">
+			<input type="text" name="username" placeholder="Name" class="form-control">
+		</div>
+		<div class="form-group">
+			<input type="password" name="password" placeholder="Password" class="form-control">
+		</div>
+		<button class="btn btn-primary form-control">Submit</button>
+	</form>
+</div>
+
+<% include ./partials/footer %>
